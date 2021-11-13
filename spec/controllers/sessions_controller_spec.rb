@@ -11,7 +11,7 @@ describe 'Api::V1::SessionsController', type: :request do
       login_with_api(user)
     end
 
-    it 'returns a token', test: true do
+    it 'returns a token' do
       expect(response.headers['Authorization']).to be_present
     end
 
